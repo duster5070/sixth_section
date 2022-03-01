@@ -1,0 +1,228 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.body
+{
+    background-color: hsl(0, 0%, 95%);
+    width: 60%;
+    margin: 110px auto 0px;
+    padding:5rem 7rem ;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.container div
+{
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.body .container div div
+{
+    width: 60px;
+    height: 30px;
+    margin: 35px 0px 30px 40px;
+    
+}
+
+.body .container div h3
+{
+    font-size: 22px;
+    color:hsl(0, 0%, 95%);
+    font-family:'Lexend Deca', sans-serif; 
+    font-weight: 700;
+    margin:15px 0px 30px 40px ;
+}
+
+.body .container div p
+{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+}
+
+.container .sedan
+{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.body .container .sedan p
+{
+    margin: 5px 20px 50px 40px ;
+
+}
+
+.container .suv
+{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.body .container .suv p
+{
+    margin: 5px 20px 30px 40px ;
+}
+
+.body .container .luxury
+{
+    background-color: hsl(179, 100%, 13%);
+    border-radius:0px 10px 10px 0px ;
+}
+
+.body .container .luxury p
+{
+    margin: 5px 20px 50px 40px ;
+}
+
+
+button
+{
+    width: 60%;
+    margin: auto;
+    padding: 0.8rem 0.4rem;
+    border-radius: 25px;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.btn_sedan
+{
+    color:hsl(31, 77%, 52%) ;
+}
+
+.btn_sedan:hover , .btn_suv:hover , .btn_luxury:hover
+{
+     background-color: transparent;
+     color: white;
+}
+
+.btn_suv
+{
+    color: hsl(184, 100%, 22%);
+}
+
+.btn_luxury
+{
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width:1100px)
+{
+    h3 , p 
+    {
+        font-size: 60%;
+    }
+}
+
+@media (max-width:965px)
+{
+    .body .container div h3
+    {
+        font-weight: 400;
+        margin:10px 0px 10px 40px ;
+    }
+
+    .body .container div p
+    {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .body .container .sedan p
+    {
+        margin: 5px 20px 0px 40px ;
+    }
+
+    .body .container .suv p
+    {
+        margin: 5px 20px 0px 40px ;
+    }
+
+    .body .container .luxury p
+    {
+        margin: 5px 20px 0px 40px ;    
+    }
+}
+
+@media (max-width:721px)
+{
+    .body .container div div
+    {
+        width: 60px;
+        height: 30px;
+        margin: 15px 0px 10px 40px;
+    }
+
+    button 
+    {
+        font-size: 50%;
+    }
+
+    .body .container div p
+    {
+        font-size: 10px;
+    }
+    .body .container div h3
+    {
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width:595px)
+{
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        height: 30%;
+    }
+
+    .body
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body .container div h3
+    {
+        font-size: 22px; 
+        font-weight: 700;
+        margin:15px 0px 30px 40px ;
+    }
+
+    .body .container div p
+    {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .container .sedan
+    {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .body .container .luxury
+    {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
